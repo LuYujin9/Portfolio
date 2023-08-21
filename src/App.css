@@ -1,38 +1,168 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+/* style for links*/
+
+:root {
+  --color-0: #708fa3; /* Main Primary color */
+  --color-1: #486f88;
+  --color-2: #29526d;
+  --color-3: #123852;
+  --color-4: #032236;
+}
+
+:link {
+  color: white;
+}
+a:hover {
+  color: blue;
+}
+a:visited {
+  color: gray;
+}
+
+/* style for content*/
+
+body {
+  margin: 0px;
+  background-color: var(--color-0);
+  border: 1px solid black; /* see the border*/
+}
+
+header {
+  background-image: url("../public/images/background.jpeg");
+  background-size: cover;
+  margin: 0px;
+  border: 1px solid black; /* see the border*/
+  height: 700px;
+}
+
+h1 {
+  color: var(--color-4);
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 200px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#h1-2 {
+  text-align: center;
+  color: var(--color-4);
+  line-height: 30px;
+  font-size: 1em;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#h1-3 {
+  text-align: center;
+  color: var(--color-4);
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 20px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#guide {
+  width: 100%;
+  height: 50px;
   display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  position: fixed;
+  top: 10px;
+  margin: 0px;
+}
+
+#guide > a {
+  padding: 10px 30px;
+  color: var(--color-4);
+  font-weight: bold;
+}
+
+.sections__dark {
+  back-color: var(--color-0);
+}
+
+.sections__dark {
+  back-color: var(--color-4);
+}
+
+#aboutme {
+  margin: 50px;
+  display: flex;
+}
+
+.skill-card {
+  position: relative;
+  display: flex;
+  width: 50%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 100px;
+  margin: 50px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.button_link {
+  width: 150px;
+  padding: 8px;
+  border: solid 2px black;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(146, 177, 229, 0.724);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pictures {
+  width: 350px;
+  height: 300px;
+  margin: 60px 0px 50px 50px;
+  box-shadow: 20px 20px;
+}
+
+#skills {
+  margin: 30px;
+  background-color: rgba(146, 177, 229, 0.724);
+  padding: 50px 100px;
+  margin: 0px;
+}
+
+.each_skill {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 30px;
+  padding-right: 50px;
+}
+
+.each_skill > div {
+  padding: 30px 30px;
+  color: rgb(118, 96, 96);
+  background-color: rgba(206, 217, 236, 0.724);
+  width: 30%;
+  font-weight: bold;
+}
+
+#resume {
+  background-color: rgba(206, 217, 236, 0.724);
+  margin: 0px;
+  padding: 50px 50px;
+}
+
+#project {
+  background-color: rgba(146, 177, 229, 0.724);
+  margin: 0px;
+  padding: 50px 50px;
+}
+
+#contact {
+  background-color: rgba(206, 217, 236, 0.724);
+  margin: 0px;
+  padding: 50px 50px;
+}
+
+.footerul {
+  display: inline;
+  border: 1px solid black; /* see the border*/
 }
