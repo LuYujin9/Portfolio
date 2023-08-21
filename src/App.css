@@ -6,7 +6,7 @@
 
 :root {
   --color-background: #a5c2d5;
-  --color-dake: #3f3f3f;
+  --color-dake: #5c5b5b;
   --color-navbar: #dcd9d9;
   --color-bright: #e3ebef;
   --color-4: #032236;
@@ -20,7 +20,7 @@ body {
 header {
   margin: 0px;
   width: 100%;
-  height: 5em;
+  height: 4em;
   background-color: var(--color-navbar);
   position: fixed;
   display: flex;
@@ -29,7 +29,7 @@ header {
 }
 
 h1 {
-  color: var(--color-4);
+  color: var(--color-dake);
   width: 6em;
   font-size: 1.5em;
   margin: auto 0.5em;
@@ -51,6 +51,8 @@ nav {
   margin: auto 1em;
   height: 2em;
   color: var(--color-dake);
+  font-weight: bold;
+  text-decoration: none;
   border-radius: 1em;
   text-align: center;
   line-height: 1.5em;
