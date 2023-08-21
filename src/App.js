@@ -56,12 +56,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <footer>
-        <ul>
-          <li>Bildrechte</li>
-          <li>Hilfe/Kontakt</li>
-          <li>Newsletter</li>
-          <li>RSS</li>
-        </ul>
+        <p>© Copyright Yujin. All Rights Reserved </p>
+        <p>Designed by Yujin</p>
       </footer>
     </>
   );
