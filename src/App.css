@@ -6,33 +6,33 @@
 
 :root {
   --color-background: #a5c2d5;
-  --color-1: #486f88;
-  --color-2: #29526d;
-  --color-3: #123852;
+  --color-dake: #5c5b5b;
+  --color-navbar: #dcd9d9;
+  --color-bright: #e3ebef;
   --color-4: #032236;
 }
 
 body {
   margin: 0px;
-  background-color: var(--color-background);
+  background-color: var(--color-bright);
 }
 
 header {
   margin: 0px;
   width: 100%;
-  height: 3em;
-  background-color: var(--color-1);
+  height: 4em;
+  background-color: var(--color-navbar);
   position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-content: center;
 }
 
 h1 {
-  color: var(--color-4);
-  width: 10em;
-  font-size: 2em;
-  margin: auto;
+  color: var(--color-dake);
+  width: 6em;
+  font-size: 1.5em;
+  margin: auto 0.5em;
   font-weight: bold;
   text-align: center;
 }
@@ -40,21 +40,34 @@ h1 {
 nav {
   margin: 0px;
   width: 100%;
-  height: 3em;
+  height: 5em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   top: 10px;
 }
 
-.link {
-  margin: 0.5em;
-  width: 7em;
+.page-link {
+  margin: auto 1em;
   height: 2em;
-  border: solid 2px black;
+  color: var(--color-dake);
+  font-weight: bold;
+  text-decoration: none;
   border-radius: 1em;
   text-align: center;
   line-height: 1.5em;
+}
+
+.external-links {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icon {
+  height: 1.5em;
+  margin: 1em 0.5em;
 }
 
 main {
@@ -65,111 +78,17 @@ main {
 .my-foto {
   width: 30em;
 }
-/* 
-#h1-2 {
+
+footer {
+  margin: 0px;
+  width: 100%;
+  height: 4em;
+  background-color: var(--color-navbar);
+  position: fixed;
+  bottom: 0;
   text-align: center;
-  color: var(--color-4);
-  line-height: 30px;
-  font-size: 1em;
-  margin: 20px auto;
 }
 
-#h1-3 {
-  text-align: center;
-  color: var(--color-4);
-  text-transform: uppercase;
-  font-size: 1em;
-  margin: 20px auto;
+footer > p {
+  font-size: 0.8em;
 }
-
-
-#guide > a {
-  padding: 10px 30px;
-  color: var(--color-4);
-  font-weight: bold;
-}
-
-.sections__dark {
-  back-color: var(--color-0);
-}
-
-.sections__dark {
-  back-color: var(--color-4);
-}
-
-#aboutme {
-  margin: 50px;
-  display: flex;
-}
-
-.skill-card {
-  position: relative;
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  margin-left: 100px;
-  margin: 50px 50px;
-}
-
-.button_link {
-  width: 150px;
-  padding: 8px;
-  border: solid 2px black;
-  text-align: center;
-  font-size: 15px;
-  background-color: rgba(146, 177, 229, 0.724);
-}
-
-.pictures {
-  width: 350px;
-  height: 300px;
-  margin: 60px 0px 50px 50px;
-  box-shadow: 20px 20px;
-}
-
-#skills {
-  margin: 30px;
-  background-color: rgba(146, 177, 229, 0.724);
-  padding: 50px 100px;
-  margin: 0px;
-}
-
-.each_skill {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: center;
-  gap: 30px;
-  padding-right: 50px;
-}
-
-.each_skill > div {
-  padding: 30px 30px;
-  color: rgb(118, 96, 96);
-  background-color: rgba(206, 217, 236, 0.724);
-  width: 30%;
-  font-weight: bold;
-}
-
-#resume {
-  background-color: rgba(206, 217, 236, 0.724);
-  margin: 0px;
-  padding: 50px 50px;
-}
-
-#project {
-  background-color: rgba(146, 177, 229, 0.724);
-  margin: 0px;
-  padding: 50px 50px;
-}
-
-#contact {
-  background-color: rgba(206, 217, 236, 0.724);
-  margin: 0px;
-  padding: 50px 50px;
-}
-
-.footerul {
-  display: inline;
-  border: 1px solid black; 
- */
