@@ -3,52 +3,69 @@
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
-/* style for links*/
 
 :root {
-  --color-0: #708fa3; /* Main Primary color */
+  --color-background: #a5c2d5;
   --color-1: #486f88;
   --color-2: #29526d;
   --color-3: #123852;
   --color-4: #032236;
 }
 
-:link {
-  color: white;
-}
-a:hover {
-  color: blue;
-}
-a:visited {
-  color: gray;
-}
-
-/* style for content*/
-
 body {
   margin: 0px;
-  background-color: var(--color-0);
-  border: 1px solid black; /* see the border*/
+  background-color: var(--color-background);
 }
 
 header {
-  background-image: url("../public/images/background.jpeg");
-  background-size: cover;
   margin: 0px;
-  border: 1px solid black; /* see the border*/
-  height: 700px;
+  width: 100%;
+  height: 3em;
+  background-color: var(--color-1);
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
 }
 
 h1 {
   color: var(--color-4);
-  text-transform: uppercase;
-  font-size: 3em;
+  width: 10em;
+  font-size: 2em;
+  margin: auto;
   font-weight: bold;
-  margin-top: 200px;
-  margin-bottom: 20px;
   text-align: center;
 }
 
+nav {
+  margin: 0px;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  top: 10px;
+}
+
+.link {
+  margin: 0.5em;
+  width: 7em;
+  height: 2em;
+  border: solid 2px black;
+  border-radius: 1em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+main {
+  margin-top: 0em;
+  padding-top: 5em;
+}
+
+.my-foto {
+  width: 30em;
+}
+/* 
 #h1-2 {
   text-align: center;
   color: var(--color-4);
@@ -65,16 +82,6 @@ h1 {
   margin: 20px auto;
 }
 
-#guide {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  position: fixed;
-  top: 10px;
-  margin: 0px;
-}
 
 #guide > a {
   padding: 10px 30px;
@@ -164,5 +171,5 @@ h1 {
 
 .footerul {
   display: inline;
-  border: 1px solid black; /* see the border*/
-}
+  border: 1px solid black; 
+ */
