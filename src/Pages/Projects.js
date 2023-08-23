@@ -1,7 +1,7 @@
 function Projects() {
   return (
     <main>
-      <article class="" id="">
+      <article className="" id="">
         <h2>Project</h2>
         <h3>Lecker Map</h3>
         <p>

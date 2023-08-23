@@ -9,7 +9,7 @@
   --color-dack: #5c5b5b;
   --color-navbar: #dcd9d9;
   --color-bright: #e3ebef;
-  --color-button: #3bbe6d;
+  --color-button: #67c189;
 }
 
 body {
@@ -23,9 +23,31 @@ header {
   height: 4em;
   background-color: var(--color-navbar);
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer {
+  margin: 0px;
+  padding: 0.5em;
+  width: 100%;
+  height: 4em;
+  background-color: var(--color-navbar);
+  text-align: center;
+}
+
+footer > p {
+  font-size: 0.8em;
+  margin: 0.5em;
 }
 
 h1 {
@@ -51,7 +73,7 @@ h3 {
 nav {
   margin: 0px;
   width: 100%;
-  height: 5em;
+  height: 4em;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -61,6 +83,7 @@ nav {
 .page-link {
   margin: auto 1em;
   height: 2em;
+  padding-top: 0.3em;
   color: var(--color-dack);
   font-weight: bold;
   text-decoration: none;
@@ -77,45 +100,27 @@ nav {
 }
 
 .icon {
-  height: 1.5em;
-  margin: 1em 0.5em;
-}
-
-main {
-  padding-top: 4em;
-}
-
-footer {
-  margin: 0px;
-  width: 100%;
-  height: 4em;
-  background-color: var(--color-navbar);
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
-
-footer > p {
-  font-size: 0.8em;
+  height: 1.6em;
+  margin: 0.7em 0.5em;
 }
 
 /* style of homepage */
 
 .homepage {
-  height: 110vh;
+  padding: 4em 0;
+  height: 100vh;
   width: 100%;
   background-image: url("/public/images/background.jpeg");
   background-size: 100% 110vh;
-  position: fixed;
 }
 
 .homepage-context-container {
   margin: auto;
-  margin-top: 8%;
+  padding: 15%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
 }
 
@@ -139,12 +144,11 @@ footer > p {
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 300%;
+    margin-top: 100%;
+    width: 50%;
   }
-
   to {
-    margin-left: 0%;
+    margin-top: 0%;
     width: 100%;
   }
 }

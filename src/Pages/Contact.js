@@ -1,9 +1,9 @@
 function Contact() {
   return (
     <main>
-      <article class="" id="">
+      <article className="" id="">
         <h2>Contact</h2>
-        <ul class="">
+        <ul className="">
           <li>
             <a
               href="https://www.linkedin.com/in/yujin-lu-119556267/"
