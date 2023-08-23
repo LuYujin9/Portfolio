@@ -6,10 +6,10 @@
 
 :root {
   --color-background: #a5c2d5;
-  --color-dake: #5c5b5b;
+  --color-dack: #5c5b5b;
   --color-navbar: #dcd9d9;
   --color-bright: #e3ebef;
-  --color-4: #032236;
+  --color-button: #67c189;
 }
 
 body {
@@ -23,24 +23,57 @@ header {
   height: 4em;
   background-color: var(--color-navbar);
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer {
+  margin: 0px;
+  padding: 0.5em;
+  width: 100%;
+  height: 4em;
+  background-color: var(--color-navbar);
+  text-align: center;
+}
+
+footer > p {
+  font-size: 0.8em;
+  margin: 0.5em;
+}
+
 h1 {
-  color: var(--color-dake);
+  margin: auto 0.5em;
+  color: var(--color-dack);
   width: 6em;
   font-size: 1.5em;
-  margin: auto 0.5em;
   font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin: 0.1em;
+  text-align: center;
+}
+
+h3 {
+  margin: 0.3em;
+  color: var(--color-dack);
   text-align: center;
 }
 
 nav {
   margin: 0px;
   width: 100%;
-  height: 5em;
+  height: 4em;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -50,7 +83,8 @@ nav {
 .page-link {
   margin: auto 1em;
   height: 2em;
-  color: var(--color-dake);
+  padding-top: 0.3em;
+  color: var(--color-dack);
   font-weight: bold;
   text-decoration: none;
   border-radius: 1em;
@@ -66,29 +100,55 @@ nav {
 }
 
 .icon {
-  height: 1.5em;
-  margin: 1em 0.5em;
+  height: 1.6em;
+  margin: 0.7em 0.5em;
 }
 
-main {
-  margin-top: 0em;
-  padding-top: 5em;
+/* style of homepage */
+
+.homepage {
+  padding: 4em 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public/images/background.jpeg");
+  background-size: 100% 110vh;
+}
+
+.homepage-context-container {
+  margin: auto;
+  padding: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+.about-me-link {
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  color: white;
+  font-weight: bold;
+  background-color: var(--color-button);
+  text-decoration: none;
 }
 
 .my-foto {
-  width: 30em;
+  margin: auto;
+  width: 5em;
+  border-radius: 3em;
 }
 
-footer {
-  margin: 0px;
-  width: 100%;
-  height: 4em;
-  background-color: var(--color-navbar);
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-}
+/* animation */
 
-footer > p {
-  font-size: 0.8em;
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 50%;
+  }
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
 }

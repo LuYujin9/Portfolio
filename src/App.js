@@ -14,29 +14,29 @@ function App() {
       <header>
         <h1>Yujin</h1>
         <nav id="">
-          <Link class="page-link" to="/">
+          <Link className="page-link" to="/">
             Home
           </Link>
-          <Link class="page-link" to="/about">
+          <Link className="page-link" to="/about">
             About
           </Link>
-          <Link class="page-link" to="/resume">
+          <Link className="page-link" to="/resume">
             Lebenslauf
           </Link>
-          <Link class="page-link" to="/projects">
+          <Link className="page-link" to="/projects">
             Projekte
           </Link>
-          <Link class="page-link" to="/contact">
+          <Link className="page-link" to="/contact">
             Kontakt
           </Link>
         </nav>
-        <div class="external-links">
+        <div className="external-links">
           <a
             href="https://www.linkedin.com/in/yujin-lu-119556267/"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={GithubIcon} alt="github icon" class="icon" />
+            <img src={GithubIcon} alt="github icon" className="icon" />
           </a>
 
           <a
@@ -44,7 +44,7 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={LinkedinIcon} alt="linkedin icon" class="icon" />
+            <img src={LinkedinIcon} alt="linkedin icon" className="icon" />
           </a>
         </div>
       </header>
