@@ -14,7 +14,7 @@
 
 body {
   margin: 0px;
-  background-color: var(--color-bright);
+  background-color: white;
 }
 
 header {
@@ -32,7 +32,7 @@ header {
 main {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-top: 4em;
   border: 0;
 }
 
@@ -50,6 +50,13 @@ footer > p {
   margin: 0.5em;
 }
 
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+
 h1 {
   margin: auto 0.5em;
   color: var(--color-dack);
@@ -60,13 +67,10 @@ h1 {
 }
 
 h2 {
-  margin: 0.1em;
   text-align: center;
+  color: var(--color-button);
 }
-
 h3 {
-  margin: 0.3em;
-  color: var(--color-dack);
   text-align: center;
 }
 
@@ -134,18 +138,56 @@ nav {
   text-decoration: none;
 }
 
-.my-foto {
-  margin: auto;
-  width: 5em;
-  border-radius: 3em;
+/* about me */
+.about-me-context {
+  margin: 2em 10vw;
+
+  text-align: center;
 }
 
+.my-foto {
+  width: 24%;
+  border-radius: 10em;
+}
+
+.description {
+  margin: auto 10vh;
+  display: flex;
+}
+
+.more-informations-container {
+  margin: auto 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+.progress-bar-wrap {
+  width: 10em;
+  background-color: var(--color-bright);
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  width: 8em;
+  background-color: var(--color-button);
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.language-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /* animation */
 
 @keyframes slidein {
   from {
     margin-top: 100%;
-    width: 50%;
+    width: 100%;
   }
   to {
     margin-top: 0%;
