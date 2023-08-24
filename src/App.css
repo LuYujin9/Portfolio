@@ -68,7 +68,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: var(--color-button);
+  color: var(--color-dack);
 }
 h3 {
   text-align: center;
@@ -141,13 +141,12 @@ nav {
 /* about me */
 .about-me-context {
   margin: 2em 10vw;
-
   text-align: center;
 }
 
 .my-foto {
-  width: 24%;
-  border-radius: 10em;
+  width: 15em;
+  border-radius: 10em/15em;
 }
 
 .description {
@@ -155,10 +154,13 @@ nav {
   display: flex;
 }
 
-.more-informations-container {
+.informations-container {
   margin: auto 10vh;
   display: flex;
   justify-content: space-around;
+}
+.informations {
+  margin: auto;
 }
 .progress-bar-wrap {
   width: 10em;

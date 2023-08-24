@@ -6,9 +6,9 @@ export const GithubIcon = ({ size = 24, color = "#000000" }) => (
     version="1.1"
     id="Layer_1"
     xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlnXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 455 455"
-    xml:space="preserve"
+    xmlSpace="preserve"
   >
     <g>
       <path
@@ -27,3 +27,20 @@ export const GithubIcon = ({ size = 24, color = "#000000" }) => (
     </g>
   </svg>
 );
+
+const Star = ({ size = 24, color = "#000000" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+  </svg>
+);
+export default Star;
