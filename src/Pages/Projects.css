@@ -1,0 +1,35 @@
+.projects-container {
+  margin: 2em;
+  display: grid;
+  @media screen and (min-width: 769px) {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.project-card {
+  margin: 1em;
+  border-radius: 3em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 237, 212);
+}
+
+.project-description {
+  margin: 0.5em 2em;
+}
+
+.project-foto {
+  margin: auto;
+  width: 10em;
+}
+
+.project-link-container {
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+}
