@@ -11,7 +11,9 @@
   --color-bright: #e3ebef;
   --color-button: #67c189;
 }
-
+p {
+  margin: 8px auto;
+}
 body {
   margin: 0px;
   background-color: white;
@@ -71,6 +73,12 @@ h2 {
   color: var(--color-dack);
 }
 h3 {
+  margin-top: 2em;
+  text-align: center;
+  color: var(--color-button);
+}
+
+h4 {
   text-align: center;
 }
 
@@ -125,7 +133,7 @@ nav {
   display: flex;
   flex-direction: column;
   animation-duration: 2s;
-  animation-name: slidein;
+  animation-name: slide-in;
 }
 
 .about-me-link {
@@ -138,55 +146,9 @@ nav {
   text-decoration: none;
 }
 
-/* about me */
-.about-me-context {
-  margin: 2em 10vw;
-  text-align: center;
-}
-
-.my-foto {
-  width: 15em;
-  border-radius: 10em/15em;
-}
-
-.description {
-  margin: auto 10vh;
-  display: flex;
-}
-
-.informations-container {
-  margin: auto 10vh;
-  display: flex;
-  justify-content: space-around;
-}
-.informations {
-  margin: auto;
-}
-.progress-bar-wrap {
-  width: 10em;
-  background-color: var(--color-bright);
-}
-.progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-  width: 8em;
-  background-color: var(--color-button);
-}
-.skill-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.language-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 /* animation */
 
-@keyframes slidein {
+@keyframes slide-in {
   from {
     margin-top: 100%;
     width: 100%;
