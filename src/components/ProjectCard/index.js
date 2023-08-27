@@ -5,7 +5,7 @@ function ProjectCard({ project }) {
     <li className="project-card">
       <h4>{project.name}</h4>
       <p className="project-description">{project.description}</p>
-      <img src={project.photo} alt="foto of project" className="project-foto" />
+      <img src={project.photo} alt="from project" className="project-photo" />
       <p className="project-description">
         <strong>Tech Stack: </strong>
         {project.techStack}

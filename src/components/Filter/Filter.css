@@ -1,0 +1,29 @@
+.filter {
+  margin: auto;
+  width: fit-content;
+  height: 5em;
+}
+
+.fitler-button {
+  margin: 1em 0.2em;
+  padding: 0.5em 1em;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+}
+
+.filter-active {
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  border: none;
+  font-weight: bold;
+  background-color: var(--color-button);
+  color: whitesmoke;
+  border-radius: 2em;
+}
+
+.fitler-button:hover {
+  background-color: var(--color-button);
+  color: whitesmoke;
+  border-radius: 2em;
+}
