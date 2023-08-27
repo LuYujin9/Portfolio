@@ -39,7 +39,7 @@ function About() {
           umwandeln. Die Herausforderung und die Möglichkeit, mich
           kontinuierlich weiterzuentwickeln, faszinieren mich ungemein.
         </p>
-        <img src="/images/my-foto.jpg" alt="my foto" className="my-foto" />
+        <img src="/images/my-photo.jpg" alt="me" className="my-photo" />
       </section>
       <h3>INFOMATIONEN</h3>
       <section className="informations-container">

@@ -1,7 +1,5 @@
-# POTFOLIO
-
+# PORTFOLIO
 
 ## Preview
 
-[Potfolio of Yujin Lu](https://potfolio-gray.vercel.app/)
-
+[Portfolio of Yujin Lu](https://portfolio-gray.vercel.app/)
