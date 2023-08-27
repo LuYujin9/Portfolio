@@ -50,7 +50,7 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<Home />} exact />
-        <Route path="/about" element={<About />} exact />
+        <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

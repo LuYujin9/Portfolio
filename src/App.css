@@ -11,10 +11,12 @@
   --color-bright: #e3ebef;
   --color-button: #67c189;
 }
-
+p {
+  margin: 8px auto;
+}
 body {
   margin: 0px;
-  background-color: var(--color-bright);
+  background-color: white;
 }
 
 header {
@@ -32,7 +34,7 @@ header {
 main {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-top: 4em;
   border: 0;
 }
 
@@ -50,6 +52,13 @@ footer > p {
   margin: 0.5em;
 }
 
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+
 h1 {
   margin: auto 0.5em;
   color: var(--color-dack);
@@ -60,13 +69,16 @@ h1 {
 }
 
 h2 {
-  margin: 0.1em;
   text-align: center;
+  color: var(--color-dack);
+}
+h3 {
+  margin-top: 2em;
+  text-align: center;
+  color: var(--color-button);
 }
 
-h3 {
-  margin: 0.3em;
-  color: var(--color-dack);
+h4 {
   text-align: center;
 }
 
@@ -121,7 +133,7 @@ nav {
   display: flex;
   flex-direction: column;
   animation-duration: 2s;
-  animation-name: slidein;
+  animation-name: slide-in;
 }
 
 .about-me-link {
@@ -134,18 +146,12 @@ nav {
   text-decoration: none;
 }
 
-.my-foto {
-  margin: auto;
-  width: 5em;
-  border-radius: 3em;
-}
-
 /* animation */
 
-@keyframes slidein {
+@keyframes slide-in {
   from {
     margin-top: 100%;
-    width: 50%;
+    width: 100%;
   }
   to {
     margin-top: 0%;

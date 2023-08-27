@@ -1,0 +1,75 @@
+/* about me */
+.about-me-context {
+  margin: 2em 10vw;
+  text-align: center;
+}
+
+.description-container {
+  margin: auto;
+  display: flex;
+  width: 45em;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 92vw;
+  }
+}
+
+.my-description {
+  margin: auto;
+  width: 50%;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.my-foto {
+  margin: 1em auto;
+  width: 10em;
+  border-radius: 10em/15em;
+}
+
+.informations-container {
+  margin: auto;
+  width: 20em;
+}
+
+.skills-container,
+.languages-container {
+  display: grid;
+  @media only screen and (max-width: 768px) {
+    margin: auto;
+    width: 95%;
+  }
+  @media only screen and (min-width: 769px) {
+    margin: auto;
+    width: 45em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill,
+.language {
+  margin: auto;
+}
+
+.rates {
+  display: flex;
+  width: 10em;
+  justify-content: space-between;
+  animation-duration: 3s;
+  animation-name: spacing-widened;
+}
+
+@keyframes spacing-widened {
+  from {
+    width: 5em;
+  }
+  to {
+    width: 10em;
+  }
+}
+.slow-element {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
