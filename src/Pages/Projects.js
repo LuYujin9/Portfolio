@@ -27,8 +27,19 @@ const projectsData = [
     preview: "",
   },
   {
+    name: "Portfolio",
+    description:
+      "Die Portfolio Webseite ist von mir. Sie können dadurch mich mehr kennenlernen",
+    photo: "/images/lecker-map.jpg",
+    techStack: "Javascript, React, styled-components",
+    keyWord: "Javascript",
+    code: "https://github.com/LuYujin9/Portfolio",
+    preview: "https://potfolio-gray.vercel.app/",
+  },
+  {
     name: "",
-    description: "Das ist eine einfache Webseite, um PHP zu lernen und üben.",
+    description:
+      "Das ist die Portfolio von mir. Sie können dadurch mich mehr kennenlernen",
     photo: "/images/lecker-map.jpg",
     techStack: "",
     keyWord: "",
