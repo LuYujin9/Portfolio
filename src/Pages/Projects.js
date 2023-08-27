@@ -4,18 +4,28 @@ function Projects() {
   return (
     <main>
       <article>
-        <h3>PROJEKTS</h3>
+        <h3>PROJEKTE</h3>
         <p className="project-description">
           Lecker Map is a full stack App for restaurant browsing and reserving.
           It's my capstone project from the neue fische boot camp.
         </p>
       </article>
-      <div classNam="filter">
-        <button>All</button>
-        <button>Javascript</button>
-        <button>React</button>
-        <button>Typescript</button>
-        <button>PHP</button>
+      <div className="filter">
+        <button name="All" className="fitler-button">
+          All
+        </button>
+        <button name="Javascript" className="fitler-button">
+          Javascript
+        </button>
+        <button name="React" className="fitler-button">
+          React
+        </button>
+        <button name="Typescript" className="fitler-button">
+          Typescript
+        </button>
+        <button name="PHP" className="fitler-button">
+          PHP
+        </button>
       </div>
       <ul className="projects-container">
         <li className="project-card">
