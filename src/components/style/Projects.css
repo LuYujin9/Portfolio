@@ -1,0 +1,15 @@
+.projects-container {
+  margin: auto;
+  width: 95%;
+  display: grid;
+  @media screen and (min-width: 769px) {
+    margin: auto;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: auto;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

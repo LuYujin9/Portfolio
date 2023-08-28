@@ -1,7 +1,7 @@
+import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";
-import styled from "styled-components";
-import { useState } from "react";
+import "../components/style/Projects.css";
 
 const filterConditions = ["All", "Javascript", "Typescript", "PHP"];
 
@@ -78,29 +78,13 @@ function Projects() {
         onProjectsList={handleProjectsList}
         fitlerActive={fitlerActive}
       />
-      <ProjectsContainer className="projects-container">
+      <ul className="projects-container">
         {projects.map((project) => (
           <ProjectCard project={project} key={project.name} />
         ))}
-      </ProjectsContainer>
+      </ul>
     </main>
   );
 }
 
 export default Projects;
-
-const ProjectsContainer = styled.ul`
-  margin: auto;
-  width: 95%;
-  display: grid;
-  @media screen and (min-width: 769px) {
-    margin: auto;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (min-width: 1000px) {
-    margin: auto;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-`;

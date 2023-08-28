@@ -1,0 +1,28 @@
+.contacts-list {
+  margin: 2em auto 5em auto;
+  width: 23em;
+}
+
+.contact {
+  margin: 1em;
+}
+
+.contact-link {
+  padding: 0.3em 2em;
+  color: white;
+  background-color: var(--color-button);
+  border-radius: 1em;
+}
+
+.address {
+  padding: 0.3em 2em;
+  color: white;
+  background-color: var(--color-button);
+  border-radius: 1em;
+}
+
+.contact-link:hover,
+.address:hover {
+  color: white;
+  padding: 0.5em 2.2em;
+}

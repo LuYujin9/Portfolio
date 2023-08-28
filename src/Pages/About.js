@@ -1,6 +1,6 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import React, { useState, useEffect, useRef } from "react";
-import "./About.css";
+import "../components/style/About.css";
 
 function About() {
   const [shouldRender, setShouldRender] = useState(false);
