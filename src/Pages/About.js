@@ -47,7 +47,7 @@ function About() {
           <strong>Geburtsdatum: </strong>18.04.1984
         </p>
         <p className="information">
-          <strong>Stadt: </strong>Dresden
+          <strong>Wohnort: </strong>Dresden
         </p>
         <p className="information">
           <strong>Bildung: </strong>Bechelor
