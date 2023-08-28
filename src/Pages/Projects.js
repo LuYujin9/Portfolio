@@ -66,13 +66,12 @@ function Projects() {
 
   return (
     <main>
-      <article>
-        <h3>PROJEKTE</h3>
-        <p className="project-description">
-          Lecker Map is a full stack App for restaurant browsing and reserving.
-          It's my capstone project from the neue fische boot camp.
-        </p>
-      </article>
+      <h3>PROJEKTE</h3>
+      <p className="projects-description">
+        Lecker Map is a full stack App for restaurant browsing and reserving.
+        It's my capstone project from the neue fische boot camp.
+      </p>
+
       <Filter
         filterConditions={filterConditions}
         onProjectsList={handleProjectsList}

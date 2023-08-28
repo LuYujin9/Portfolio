@@ -185,8 +185,7 @@ function About() {
                   </div>
                 </li>
                 <li className="language">
-                  <p>Chinesisch:</p>
-                  <p> Muttersprache</p>
+                  <p>Chinesisch: MS</p>
                   <div className="rates">
                     <AiFillStar />
                     <AiFillStar />

@@ -1,15 +1,18 @@
+.projects-description {
+  width: 90vw;
+}
+
 .projects-container {
-  margin: auto;
-  width: 95%;
+  margin: 0 5vw 3em 5vw;
+  width: 90vw;
   display: grid;
   @media screen and (min-width: 769px) {
-    margin: auto;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (min-width: 1000px) {
-    margin: auto;
+    margin-bottom: 3em;
     grid-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
