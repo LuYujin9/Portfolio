@@ -8,10 +8,10 @@ function Contact() {
       <h3>KONTAKT</h3>
       <ContactList>
         <StyledListItem>
-          <p>
+          <h5>
             <AiOutlineMail />
             <strong> Schreibe mir eine Email:</strong>
-          </p>
+          </h5>
           <StyledLink
             href="mailto: wuwujane@hotmail.com"
             aria-label="link to write an email"
@@ -20,10 +20,10 @@ function Contact() {
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <p>
+          <h5>
             <AiOutlineMessage />
             <strong> Schreibe mir eine Nachright:</strong>
-          </p>
+          </h5>
 
           <StyledLink
             href="https://www.linkedin.com/in/yujin-lu-119556267/"
@@ -34,17 +34,17 @@ function Contact() {
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <p>
+          <h5>
             <BsTelephone />
             <strong> Rufe mich an:</strong>
-          </p>
+          </h5>
           <StyledLink href="tel:+491603427599">0160 3427599</StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <p>
+          <h5>
             <BsMailbox />
             <strong> Sende mir einen Berief: </strong>
-          </p>
+          </h5>
           <Styledparagraph>PutjatinPlatz 2, 01259 Dresden</Styledparagraph>
         </StyledListItem>
       </ContactList>

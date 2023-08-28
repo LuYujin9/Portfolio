@@ -41,7 +41,7 @@ function About() {
         </p>
         <img src="/images/my-photo.jpg" alt="me" className="my-photo" />
       </section>
-      <h3>INFOMATIONEN</h3>
+      <h4>INFOMATIONEN</h4>
       <section className="informations-container">
         <p className="information">
           <strong>Geburtsdatum: </strong>18.04.1984
@@ -67,7 +67,7 @@ function About() {
         {shouldRender && (
           <div>
             <section>
-              <h3>SKILLS</h3>
+              <h4>SKILLS</h4>
               <ul className="skills-container">
                 <li className="skill">
                   <p>Javascript ES8+</p>
@@ -160,7 +160,7 @@ function About() {
               </ul>
             </section>
             <section>
-              <h3>SPRACHE</h3>
+              <h4>SPRACHE</h4>
               <ul className="languages-container">
                 <li className="language">
                   <p>Deutsch: C1</p>
