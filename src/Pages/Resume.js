@@ -1,13 +1,16 @@
+import styled from "styled-components";
+
 function Resume() {
   return (
     <main>
-      <article className="sections__light" id="resume">
-        <div className="sections">
-          <h2>Lebenslauf</h2>
-          <img className="" src="/images/CV.png" alt="CV from Yujin" />
-        </div>
-      </article>
+      <h3>LEBENSLAUF</h3>
+      <StyledImag className="" src="/images/CV.png" alt="CV from Yujin" />
     </main>
   );
 }
 export default Resume;
+
+const StyledImag = styled.img`
+  margin: auto 10%;
+  width: 80%;
+`;
