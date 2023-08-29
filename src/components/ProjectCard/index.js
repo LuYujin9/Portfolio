@@ -1,8 +1,16 @@
 import "./ProjectCard.css";
+import { useEffect, useState } from "react";
 
 function ProjectCard({ project }) {
+  const [isStart, setIsStart] = useState(false);
+
+  useEffect(() => {
+    setIsStart(true);
+  }, []);
+
+  //<li className="project-card enlarge-active">
   return (
-    <li className="project-card">
+    <li className={`project-card ${isStart ? "enlarge" : "enlarge-active"}`}>
       <h4>{project.name}</h4>
       <div className="project-link-container">
         <a href={project.code} target="_blank" rel="noreferrer">

@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 
 import "../components/style/Resume.css";
 function Resume() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isStart, setIsStart] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true);
+    setIsStart(true);
   }, []);
 
   return (
     <main>
-      <div className={`${isVisible ? "slide-up" : "slide-up-active"}`}>
+      <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
         <h3>LEBENSLAUF</h3>
         <img
           className="resume-photo"

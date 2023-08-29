@@ -4,15 +4,15 @@ import { BsTelephone, BsMailbox } from "react-icons/bs";
 import "../components/style/Contact.css";
 
 function Contact() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isStart, setIsStart] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true);
+    setIsStart(true);
   }, []);
 
   return (
     <main>
-      <div className={`${isVisible ? "slide-up" : "slide-up-active"}`}>
+      <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
         <h3>KONTAKT</h3>
         <ul className="contacts-list">
           <li className="contact">

@@ -51,6 +51,7 @@ const projectsData = [
 function Projects() {
   const [projects, setProjects] = useState(projectsData);
   const [fitlerActive, setFitlerActive] = useState("All");
+  const [isStart, setIsStart] = useState(false);
 
   function handleProjectsList(condition) {
     setFitlerActive(condition);
@@ -63,15 +64,14 @@ function Projects() {
       setProjects(filteredProjects);
     }
   }
-  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true);
+    setIsStart(true);
   }, []);
 
   return (
     <main>
-      <div className={`${isVisible ? "slide-up" : "slide-up-active"}`}>
+      <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
         <h3>PROJEKTE</h3>
         <p className="projects-description">
           Lecker Map is a full stack App for restaurant browsing and reserving.
