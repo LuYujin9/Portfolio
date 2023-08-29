@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";
 import "../components/style/Projects.css";
@@ -63,25 +63,32 @@ function Projects() {
       setProjects(filteredProjects);
     }
   }
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   return (
     <main>
-      <h3>PROJEKTE</h3>
-      <p className="projects-description">
-        Lecker Map is a full stack App for restaurant browsing and reserving.
-        It's my capstone project from the neue fische boot camp.
-      </p>
+      <div className={`${isVisible ? "slide-up" : "slide-up-active"}`}>
+        <h3>PROJEKTE</h3>
+        <p className="projects-description">
+          Lecker Map is a full stack App for restaurant browsing and reserving.
+          It's my capstone project from the neue fische boot camp.
+        </p>
 
-      <Filter
-        filterConditions={filterConditions}
-        onProjectsList={handleProjectsList}
-        fitlerActive={fitlerActive}
-      />
-      <ul className="projects-container">
-        {projects.map((project) => (
-          <ProjectCard project={project} key={project.name} />
-        ))}
-      </ul>
+        <Filter
+          filterConditions={filterConditions}
+          onProjectsList={handleProjectsList}
+          fitlerActive={fitlerActive}
+        />
+        <ul className="projects-container">
+          {projects.map((project) => (
+            <ProjectCard project={project} key={project.name} />
+          ))}
+        </ul>
+      </div>
     </main>
   );
 }

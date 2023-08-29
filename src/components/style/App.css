@@ -147,9 +147,9 @@ nav {
 
 .slide-up {
   transform: translateY(0);
-  transition: transform 3s ease;
+  transition: transform 2s ease;
 }
 
 .slide-up-active {
-  transform: translateY(50%);
+  transform: translateY(5em);
 }
