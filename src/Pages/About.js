@@ -24,6 +24,20 @@ function About() {
       });
     }, options);
 
+    /*  // 观察你希望在滚动到时渲染的元素
+    const targetElement = document.querySelector("#slide-in-skills");
+    console.log(targetElement);
+    if (targetElement) {
+      observer.observe(targetElement);
+    }
+
+    // 清理函数，组件卸载时停止观察
+    return () => {
+      if (targetElement) {
+        observer.unobserve(targetElement);
+      }
+    }; */
+
     if (targetRef.current) {
       observer.observe(targetRef.current);
     }
@@ -43,36 +57,33 @@ function About() {
         </p>
         <img src="/images/my-photo.jpg" alt="me" className="my-photo" />
       </section>
-      <h4
-        ref={targetRef}
-        className={`${isVisible ? "slide-up" : "slide-up-active"}`}
-      >
-        INFOMATIONEN
-      </h4>
-      <section className="informations-container">
-        <p className="information">
-          <strong>Geburtsdatum: </strong>18.04.1984
-        </p>
-        <p className="information">
-          <strong>Wohnort: </strong>Dresden
-        </p>
-        <p className="information">
-          <strong>Bildung: </strong>Bechelor
-        </p>
-        <p className="information">
-          <strong>Tel: </strong>0160 3427599
-        </p>
-        <p className="information">
-          <strong>Email: </strong>wuwujane@hotmail.com
-        </p>
-        <p className="information">
-          <strong>Github:</strong>https://github.com/LuYujin9
-        </p>
-      </section>
       <div
         ref={targetRef}
         className={`${isVisible ? "slide-up" : "slide-up-active"}`}
       >
+        <h4>INFOMATIONEN</h4>
+        <section className="informations-container">
+          <p className="information">
+            <strong>Geburtsdatum: </strong>18.04.1984
+          </p>
+          <p className="information">
+            <strong>Wohnort: </strong>Dresden
+          </p>
+          <p className="information">
+            <strong>Bildung: </strong>Bechelor
+          </p>
+          <p className="information">
+            <strong>Tel: </strong>0160 3427599
+          </p>
+          <p className="information">
+            <strong>Email: </strong>wuwujane@hotmail.com
+          </p>
+          <p className="information">
+            <strong>Github:</strong>https://github.com/LuYujin9
+          </p>
+        </section>
+      </div>
+      <div ref={targetRef} id="slide-in-skills">
         {shouldRender && (
           <div>
             <section>
