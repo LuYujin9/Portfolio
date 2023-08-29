@@ -13,7 +13,7 @@ function App() {
     <>
       <header>
         <h1>Yujin</h1>
-        <nav id="">
+        <nav>
           <Link className="page-link" to="/">
             Home
           </Link>
