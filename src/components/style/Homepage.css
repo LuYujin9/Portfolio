@@ -18,8 +18,8 @@
   margin: 1em auto;
   padding: 0.5em 1em;
   border-radius: 2em;
-  color: white;
+  color: var(--color-01);
   font-weight: bold;
-  background-color: var(--color-button);
+  background-color: var(--color-04);
   text-decoration: none;
 }

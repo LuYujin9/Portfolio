@@ -10,14 +10,14 @@
 .contact-link {
   padding: 0.3em 2em;
   color: white;
-  background-color: var(--color-button);
+  background-color: var(--color-04);
   border-radius: 1em;
 }
 
 .address {
   padding: 0.3em 2em;
   color: white;
-  background-color: var(--color-button);
+  background-color: var(--color-04);
   border-radius: 1em;
 }
 
