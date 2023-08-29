@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 2.5em;
   text-align: center;
-  color: var(--color-05);
+  color: var(--color-03);
 }
 
 h3 {
@@ -145,7 +145,7 @@ nav {
   transition: 0.3s;
 }
 
-.page-link {
+nav a {
   margin: auto 1em;
   height: 2em;
   padding-top: 0.3em;
@@ -161,6 +161,14 @@ nav {
     height: 1em;
     padding-top: 0;
     font-size: 0.9em;
+  }
+}
+.active {
+  color: var(--color-05);
+  @media screen and (min-width: 690px) {
+    padding: 0.3rem 1rem;
+    color: white;
+    background-color: var(--color-04);
   }
 }
 
@@ -184,6 +192,8 @@ footer {
   height: 4em;
   background-color: var(--color-03);
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 footer > p {
