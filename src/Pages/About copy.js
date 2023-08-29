@@ -4,7 +4,6 @@ import "../components/style/About.css";
 
 function About() {
   const [shouldRender, setShouldRender] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
   const targetRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +16,6 @@ function About() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
           setShouldRender(true);
           observer.unobserve(entry.target);
         }
@@ -43,12 +41,7 @@ function About() {
         </p>
         <img src="/images/my-photo.jpg" alt="me" className="my-photo" />
       </section>
-      <h4
-        ref={targetRef}
-        className={`${isVisible ? "slide-up" : "slide-up-active"}`}
-      >
-        INFOMATIONEN
-      </h4>
+      <h4>INFOMATIONEN</h4>
       <section className="informations-container">
         <p className="information">
           <strong>Geburtsdatum: </strong>18.04.1984
@@ -69,10 +62,8 @@ function About() {
           <strong>Github:</strong>https://github.com/LuYujin9
         </p>
       </section>
-      <div
-        ref={targetRef}
-        className={`${isVisible ? "slide-up" : "slide-up-active"}`}
-      >
+
+      <div ref={targetRef} className="slow-element">
         {shouldRender && (
           <div>
             <section>

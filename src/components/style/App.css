@@ -144,3 +144,12 @@ nav {
     height: 100%;
   }
 }
+
+.slide-up {
+  transform: translateY(0);
+  transition: transform 3s ease;
+}
+
+.slide-up-active {
+  transform: translateY(50%);
+}
