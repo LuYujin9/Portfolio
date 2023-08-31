@@ -1,7 +1,9 @@
 .filter {
   margin: auto;
   width: fit-content;
-  height: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .fitler-button {

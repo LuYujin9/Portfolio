@@ -12,7 +12,7 @@
 
 .project-photo {
   margin: auto;
-  width: 10em;
+  width: 20em;
 }
 
 .project-link-container {
@@ -21,7 +21,12 @@
   flex-direction: column;
 }
 
-.enlage {
-  transform: scale(1, 1);
-  transition: transform 1s ease;
+.project-link {
+  font-weight: bold;
+  color: var(--color-03);
+}
+
+.project-link:hover {
+  background-color: var(--color-03);
+  color: var(--color-01);
 }

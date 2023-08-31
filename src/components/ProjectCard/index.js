@@ -13,10 +13,20 @@ function ProjectCard({ project }) {
     <li className={`project-card ${isStart ? "enlarge" : "enlarge-active"}`}>
       <h4>{project.name}</h4>
       <div className="project-link-container">
-        <a href={project.code} target="_blank" rel="noreferrer">
+        <a
+          href={project.code}
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
           Code
         </a>
-        <a href={project.preview} target="_blank" rel="noreferrer">
+        <a
+          href={project.preview}
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
           Vorschau
         </a>
       </div>

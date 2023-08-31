@@ -3,47 +3,45 @@ import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";
 import "../components/style/Projects.css";
 
-const filterConditions = ["All", "Javascript", "Typescript", "PHP"];
+const filterConditions = [
+  "All",
+  "Javascript",
+  "Typescript",
+  "PHP",
+  "MangoDB",
+  "MySQL",
+];
 
 const projectsData = [
   {
     name: "Lecker Map",
     description:
-      "Lecker Map ist mein Capstone-Project von intensivem Kurs für Web-develop. Es ist eine full-sack-App and biete die functions:Restaurants Anschauen, Reservieren, Kommentieren und in Map schauen. Außerdem kann man noch die Kommentars und Reserves sich verändern und entfern.",
-    photo: "/images/lecker-map.jpg",
+      "Lecker Map ist mein Capstone-Project von intensivem Kurs für Web-develop. Es ist eine full-sack-App and biete die functions:Restaurants Suchen, Anschauen, Reservieren und Kommentieren. Außerdem kann man noch die Kommentars und Reserves sich verändern und entfern.",
+    photo: "/images/lecker-map.png",
     techStack:
-      "Next.js, React, Javascript, MangoDB, Mangoose, testing-library/react",
+      "Next.js, React, Javascript, MangoDB, Mangoose,styled-components, testing-library/react",
     keyWord: "Javascript",
     code: "https://github.com/LuYujin9/capstone-project",
     preview: "https://capstone-project-luyujin9.vercel.app/",
   },
   {
-    name: "Feedback Page",
-    description: "Das ist eine einfache Webseite, um PHP zu lernen und üben.",
-    photo: "/images/lecker-map.jpg",
-    techStack: "PHP",
-    keyWord: "PHP",
-    code: "https://github.com/LuYujin9/PHP_Project_Feedback_Page",
-    preview: "",
-  },
-  {
     name: "Portfolio",
     description:
-      "Die Portfolio Webseite ist von mir. Sie können dadurch mich mehr kennenlernen",
-    photo: "/images/lecker-map.jpg",
+      "Die Portfolio Webseite zeigt meine Informationen. Sie können dadurch mich mehr kennenlernen",
+    photo: "/images/portfolio.png",
     techStack: "Javascript, React, styled-components",
     keyWord: "Javascript",
     code: "https://github.com/LuYujin9/Portfolio",
     preview: "https://potfolio-gray.vercel.app/",
   },
   {
-    name: "",
+    name: "Feedback Page",
     description:
-      "Das ist die Portfolio von mir. Sie können dadurch mich mehr kennenlernen",
-    photo: "/images/lecker-map.jpg",
-    techStack: "",
-    keyWord: "",
-    code: "",
+      "Das ist eine Webseite, um PHP und MySQL gelernt und geübt zu werden.",
+    photo: "/images/feedback.png",
+    techStack: "PHP, MySQL, phpMyAdmin",
+    keyWord: "PHP",
+    code: "https://github.com/LuYujin9/PHP_Project_Feedback_Page",
     preview: "",
   },
 ];
