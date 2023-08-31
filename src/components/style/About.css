@@ -1,56 +1,64 @@
-/* about me */
-.about-me-context {
-  margin: 2em 10vw;
-  text-align: center;
-}
-
 .description-container {
   margin: auto;
+  margin-bottom: 3em;
   display: flex;
-  width: 45em;
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    width: 92vw;
-  }
+  width: 90vw;
+  flex-direction: column;
 }
 
 .my-description {
   margin: auto;
-  width: 50%;
+  text-align: justify;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    width: 90%;
+    width: 90vw;
   }
 }
 
 .my-photo {
   margin: 1em auto;
-  width: 10em;
-  border-radius: 10em/15em;
+  width: 16em;
 }
+/* border-radius: 8em;
+box-shadow: 10px 5px 5px gray; */
 
 .informations-container {
   margin: auto;
-  width: 20em;
+  margin-bottom: 3em;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.information {
+  margin-left: 0;
 }
 
 .skills-container,
 .languages-container {
+  margin: auto;
+  margin-bottom: 3em;
+  width: 90vw;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+
   @media only screen and (max-width: 768px) {
-    margin: auto;
-    width: 95%;
-  }
-  @media only screen and (min-width: 769px) {
-    margin: auto;
-    width: 45em;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .skill,
 .language {
-  margin: auto;
+  width: 10em;
 }
 
 .rates {

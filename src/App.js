@@ -1,6 +1,6 @@
-import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
-import Home from "./Pages/Home";
+import "./components/style/App.css";
+import { Route, Routes, NavLink } from "react-router-dom";
+import Home from "./Pages/Homepage";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Resume from "./Pages/Resume";
@@ -13,22 +13,22 @@ function App() {
     <>
       <header>
         <h1>Yujin</h1>
-        <nav id="">
-          <Link className="page-link" to="/">
+        <nav>
+          <NavLink activeClassName="active-link" to="/">
             Home
-          </Link>
-          <Link className="page-link" to="/about">
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/about">
             About
-          </Link>
-          <Link className="page-link" to="/resume">
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/resume">
             Lebenslauf
-          </Link>
-          <Link className="page-link" to="/projects">
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/projects">
             Projekte
-          </Link>
-          <Link className="page-link" to="/contact">
+          </NavLink>
+          <NavLink activeClassName="active-link" to="/contact">
             Kontakt
-          </Link>
+          </NavLink>
         </nav>
         <div className="external-links">
           <a
@@ -49,11 +49,11 @@ function App() {
         </div>
       </header>
       <Routes>
-        <Route path="/" element={<Home />} exact />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" Component={Home} exact />
+        <Route path="/about" Component={About} />
+        <Route path="/resume" Component={Resume} />
+        <Route path="/projects" Component={Projects} />
+        <Route path="/contact" Component={Contact} />
       </Routes>
       <footer>
         <p>© Copyright Yujin. All Rights Reserved </p>

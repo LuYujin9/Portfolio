@@ -1,0 +1,18 @@
+.projects-description {
+  width: 90vw;
+}
+
+.projects-container {
+  margin: 0 5vw 3em 5vw;
+  width: 90vw;
+  display: grid;
+  @media screen and (min-width: 769px) {
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: 1000px) {
+    margin-bottom: 3em;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
