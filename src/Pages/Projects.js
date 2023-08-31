@@ -3,14 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";
 import "../components/style/Projects.css";
 
-const filterConditions = [
-  "All",
-  "Javascript",
-  "Typescript",
-  "PHP",
-  "MangoDB",
-  "MySQL",
-];
+const filterConditions = ["All", "Javascript", "PHP", "MangoDB", "MySQL"];
 
 const projectsData = [
   {
@@ -20,7 +13,7 @@ const projectsData = [
     photo: "/images/lecker-map.png",
     techStack:
       "Next.js, React, Javascript, MangoDB, Mangoose,styled-components, testing-library/react",
-    keyWord: "Javascript",
+    keyWord: ["Javascript", "MangoDB"],
     code: "https://github.com/LuYujin9/capstone-project",
     preview: "https://capstone-project-luyujin9.vercel.app/",
   },
@@ -30,7 +23,7 @@ const projectsData = [
       "Die Portfolio Webseite zeigt meine Informationen. Sie können dadurch mich mehr kennenlernen",
     photo: "/images/portfolio.png",
     techStack: "Javascript, React, styled-components",
-    keyWord: "Javascript",
+    keyWord: ["Javascript", "React"],
     code: "https://github.com/LuYujin9/Portfolio",
     preview: "https://potfolio-gray.vercel.app/",
   },
@@ -40,7 +33,7 @@ const projectsData = [
       "Das ist eine Webseite, um PHP und MySQL gelernt und geübt zu werden.",
     photo: "/images/feedback.png",
     techStack: "PHP, MySQL, phpMyAdmin",
-    keyWord: "PHP",
+    keyWord: ["PHP", "MySQL"],
     code: "https://github.com/LuYujin9/PHP_Project_Feedback_Page",
     preview: "",
   },
@@ -57,7 +50,7 @@ function Projects() {
       setProjects(projectsData);
     } else {
       const filteredProjects = projectsData.filter((project) => {
-        return project.keyWord === condition ? true : false;
+        return project.keyWord.includes(condition);
       });
       setProjects(filteredProjects);
     }
