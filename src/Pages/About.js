@@ -44,7 +44,7 @@ function About() {
             umwandeln. Die Herausforderung und die Möglichkeit, mich
             kontinuierlich weiterzuentwickeln, faszinieren mich ungemein.
           </p>
-          <img src="/images/my-photo.jpg" alt="me" className="my-photo" />
+          <img src="/images/my-photo.png" alt="me" className="my-photo" />
         </section>
       </div>
       <div className="slide-up-item slide-up-active">

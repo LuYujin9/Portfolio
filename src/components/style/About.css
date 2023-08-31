@@ -17,9 +17,10 @@
 
 .my-photo {
   margin: 1em auto;
-  width: 15em;
-  box-shadow: 10px 5px 5px gray;
+  width: 16em;
 }
+/* border-radius: 8em;
+box-shadow: 10px 5px 5px gray; */
 
 .informations-container {
   margin: auto;

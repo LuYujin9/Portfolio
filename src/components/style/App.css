@@ -63,9 +63,16 @@ h4 {
   text-align: center;
   color: var(--color-05);
 }
+
 h5 {
   margin: 0.6em auto;
   font-size: 1.2em;
+}
+
+h6 {
+  margin: 0.6em auto;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 a {

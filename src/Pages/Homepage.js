@@ -14,12 +14,12 @@ function Home() {
         <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
           <div className="homepage-context-container">
             <h2>Yujin Lu</h2>
-            <h5>
+            <h6>
               <strong>
                 Ich bin eine Web-Entwicklerin in Dresden mit chinesischen
                 Wurzeln.
               </strong>
-            </h5>
+            </h6>
             <Link className="about-me-link" to="/about">
               ABOUT ME
             </Link>
