@@ -65,8 +65,8 @@ function Projects() {
       <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
         <h3>PROJEKTE</h3>
         <p className="projects-description">
-          Lecker Map is a full stack App for restaurant browsing and reserving.
-          It's my capstone project from the neue fische boot camp.
+          Sie können hier meine Projekte anschauen. Ich werden noch mehre
+          Project machen und constent erneuen.
         </p>
 
         <Filter
