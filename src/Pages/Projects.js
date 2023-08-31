@@ -31,7 +31,7 @@ const projectsData = [
     name: "Feedback Page",
     description:
       "Das ist eine Webseite, um PHP und MySQL gelernt und geübt zu werden.",
-    photo: "/images/feedback.png",
+    photo: "/images/Feedback.png",
     techStack: "PHP, MySQL, phpMyAdmin",
     keyWord: ["PHP", "MySQL"],
     code: "https://github.com/LuYujin9/PHP_Project_Feedback_Page",
