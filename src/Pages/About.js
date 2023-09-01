@@ -37,12 +37,12 @@ function About() {
         <h3>ABOUT ME</h3>
         <section className="description-container">
           <p className="my-description">
-            Ich bin Yujin Lu und schon 4 Jahren in Deutschland gewohnt. Diese
-            Jahr habe dieses Jahr erfolgreich einen Intensivkurs in Vollzeit für
-            Web Development erfolgreich abgeschlossen und will meine ganze
+            Ich bin Yujin Lu und lebe bereits seit 4 Jahren in Deutschland.
+            Diese Jahr habe ich erfolgreich einen Intensivkurs in Vollzeit für
+            Web Development erfolgreich abgeschlossen und will jetzt meine ganze
             Leidenschaft für das Programmieren in eine berufliche Chance
-            umwandeln. Die Herausforderung und die Möglichkeit, mich
-            kontinuierlich weiterzuentwickeln, faszinieren mich ungemein.
+            umwandeln. Diese neue Herausforderungen und die Möglichkeit, mich
+            kontinuierlich weiterzuentwickeln, faszinieren mich dabei ungemein.
           </p>
           <img src="/images/my-photo.png" alt="me" className="my-photo" />
         </section>

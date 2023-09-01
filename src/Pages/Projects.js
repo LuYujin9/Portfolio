@@ -9,7 +9,7 @@ const projectsData = [
   {
     name: "Lecker Map",
     description:
-      "Lecker Map ist mein Capstone-Project von intensivem Kurs für Web-develop. Es ist eine full-sack-App and biete die functions:Restaurants Suchen, Anschauen, Reservieren und Kommentieren. Außerdem kann man noch die Kommentars und Reserves sich verändern und entfern.",
+      "Die Lecker Map ist mein Capstone-Project aus dem intensivkurs für Web-development. Es ist eine full-sack-App mit folgenden Funktionen: Restaurants Suche nach eigenen Kriterien, Vorschau(Location,Menü etc.), Reservierung und Möglichkeit für Kommentare.",
     photo: "/images/lecker-map.png",
     techStack:
       "Next.js, React, Javascript, MangoDB, Mangoose,styled-components, testing-library/react",
@@ -20,7 +20,7 @@ const projectsData = [
   {
     name: "Portfolio",
     description:
-      "Die Portfolio Webseite zeigt meine Informationen. Sie können dadurch mich mehr kennenlernen",
+      "Die Portfolio Webseite zeigt meine Informationen, um mich besser kennenlernen zu können.",
     photo: "/images/portfolio.png",
     techStack: "Javascript, React, styled-components",
     keyWord: ["Javascript", "React"],
@@ -30,7 +30,7 @@ const projectsData = [
   {
     name: "Feedback Page",
     description:
-      "Das ist eine Webseite, um PHP und MySQL gelernt und geübt zu werden.",
+      "Das ist eine Webseite, um PHP und MySQL zu lernen und zu üben.",
     photo: "/images/Feedback.png",
     techStack: "PHP, MySQL, phpMyAdmin",
     keyWord: ["PHP", "MySQL"],
