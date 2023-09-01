@@ -13,16 +13,15 @@ function ProjectCard({ project }) {
     <li className={`project-card ${isStart ? "enlarge" : "enlarge-active"}`}>
       <h4>{project.name}</h4>
       <div className="project-link-container">
-        {project.code !== "" && (
-          <a
-            href={project.code}
-            target="_blank"
-            rel="noreferrer"
-            className="project-link"
-          >
-            Code
-          </a>
-        )}
+        <a
+          href={project.code}
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
+          Code
+        </a>
+
         {project.preview !== "" && (
           <a
             href={project.preview}
