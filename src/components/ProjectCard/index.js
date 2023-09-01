@@ -21,14 +21,17 @@ function ProjectCard({ project }) {
         >
           Code
         </a>
-        <a
-          href={project.preview}
-          target="_blank"
-          rel="noreferrer"
-          className="project-link"
-        >
-          Vorschau
-        </a>
+
+        {project.preview !== "" && (
+          <a
+            href={project.preview}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link"
+          >
+            Vorschau
+          </a>
+        )}
       </div>
       <p className="project-description">{project.description}</p>
       <img src={project.photo} alt="from project" className="project-photo" />
