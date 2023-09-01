@@ -14,7 +14,13 @@ function Resume() {
         <h3>LEBENSLAUF</h3>
         <img
           className="resume-photo"
-          src="/images/CV.png"
+          src="/images/Lebenslauf-page-one.png
+          "
+          alt="CV from Yujin"
+        />
+        <img
+          className="resume-photo"
+          src="/images/Lebenslauf-page-two.png"
           alt="CV from Yujin"
         />
       </div>
