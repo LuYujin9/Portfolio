@@ -8,6 +8,7 @@ function Home() {
   useEffect(() => {
     setIsStart(true);
   }, []);
+
   return (
     <main>
       <section className="homepage">

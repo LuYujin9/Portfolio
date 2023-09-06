@@ -26,7 +26,7 @@ export const projectsData = [
     techStack: "Javascript, React, styled-components",
     keyWord: ["Javascript", "React"],
     code: "https://github.com/LuYujin9/Portfolio",
-    preview: "https://potfolio-gray.vercel.app/",
+    preview: "https://portfolio-luyujin9.vercel.app/",
   },
   {
     name: "Feedback Page",

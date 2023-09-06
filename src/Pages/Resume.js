@@ -1,6 +1,6 @@
+import "../components/style/Resume.css";
 import { useState, useEffect } from "react";
 
-import "../components/style/Resume.css";
 function Resume() {
   const [isStart, setIsStart] = useState(false);
 
@@ -14,8 +14,7 @@ function Resume() {
         <h3>LEBENSLAUF</h3>
         <img
           className="resume-photo"
-          src="/images/Lebenslauf-page-one.png
-          "
+          src="/images/Lebenslauf-page-one.png"
           alt="CV from Yujin"
         />
         <img

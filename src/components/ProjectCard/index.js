@@ -8,7 +8,6 @@ function ProjectCard({ project }) {
     setIsStart(true);
   }, []);
 
-  //<li className="project-card enlarge-active">
   return (
     <li className={`project-card ${isStart ? "enlarge" : "enlarge-active"}`}>
       <h4>{project.name}</h4>
@@ -21,7 +20,6 @@ function ProjectCard({ project }) {
         >
           Code
         </a>
-
         {project.preview !== "" && (
           <a
             href={project.preview}

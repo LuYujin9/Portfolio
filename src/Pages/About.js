@@ -1,17 +1,15 @@
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { useEffect } from "react";
 import "../components/style/About.css";
+import { useEffect } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 function About() {
   useEffect(() => {
     const slideInItems = document.querySelectorAll(".slide-up-item");
-
     const options = {
       root: null,
       rootMargin: "0px",
       threshold: 0.2,
     };
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {

@@ -11,6 +11,7 @@
   --color-04: #f87ab8;
   --color-05: #e1358d;
 }
+
 p {
   margin: 8px auto;
   color: var(--color-02);
@@ -31,6 +32,7 @@ main {
 li {
   list-style: none;
 }
+
 ul {
   padding-left: 0;
 }
@@ -170,6 +172,7 @@ nav a {
     font-size: 0.9em;
   }
 }
+
 .active {
   color: var(--color-05);
   @media screen and (min-width: 690px) {
@@ -191,7 +194,7 @@ nav a {
   margin: 0.7em 0.5em;
 }
 
-/* style of header */
+/* style of footer */
 footer {
   margin: 0px;
   padding: 0.5em;

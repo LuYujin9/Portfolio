@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
-import { BsTelephone, BsMailbox } from "react-icons/bs";
 import "../components/style/Contact.css";
+import { useState, useEffect } from "react";
+import { BsTelephone, BsMailbox } from "react-icons/bs";
+import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 
 function Contact() {
   const [isStart, setIsStart] = useState(false);
@@ -33,7 +33,6 @@ function Contact() {
               <AiOutlineMessage />
               <strong> Schreibe mir eine Nachright:</strong>
             </h5>
-
             <a
               className="contact-link"
               href="https://www.linkedin.com/in/yujin-lu-119556267/"

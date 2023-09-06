@@ -1,14 +1,18 @@
+import "../components/style/Projects.css";
 import { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";
-import "../components/style/Projects.css";
 import { filterConditions, projectsData } from "../data/data.js";
 
 function Projects() {
   const [projects, setProjects] = useState(projectsData);
   const [fitlerActive, setFitlerActive] = useState("All");
   const [isStart, setIsStart] = useState(false);
-  console.log(filterConditions);
+
+  useEffect(() => {
+    setIsStart(true);
+  }, []);
+
   function handleProjectsList(condition) {
     setFitlerActive(condition);
     if (condition === "All") {
@@ -21,10 +25,6 @@ function Projects() {
     }
   }
 
-  useEffect(() => {
-    setIsStart(true);
-  }, []);
-
   return (
     <main>
       <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
@@ -33,7 +33,6 @@ function Projects() {
           Sie können hier meine Projekte anschauen. Ich werden noch mehre
           Project machen und constent erneuen.
         </p>
-
         <Filter
           filterConditions={filterConditions}
           onProjectsList={handleProjectsList}
