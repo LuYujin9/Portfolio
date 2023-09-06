@@ -1,5 +1,5 @@
-import "./components/style/App.css";
 import { Route, Routes, NavLink } from "react-router-dom";
+import "./components/style/App.css";
 import Home from "./Pages/Homepage";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
@@ -38,7 +38,6 @@ function App() {
           >
             <img src={GithubIcon} alt="github icon" className="icon" />
           </a>
-
           <a
             href="https://github.com/LuYujin9"
             target="_blank"
