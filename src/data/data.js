@@ -1,6 +1,7 @@
 export const filterConditions = [
   "All",
   "Javascript",
+  "Typescript",
   "PHP",
   "MangoDB",
   "MySQL",
@@ -19,16 +20,6 @@ export const projectsData = [
     preview: "https://capstone-project-luyujin9.vercel.app/",
   },
   {
-    name: "Portfolio",
-    description:
-      "Die Portfolio Webseite zeigt meine Informationen, um mich besser kennenlernen zu können.",
-    photo: "/images/portfolio.png",
-    techStack: "Javascript, React, CSS",
-    keyWord: ["Javascript", "React"],
-    code: "https://github.com/LuYujin9/Portfolio",
-    preview: "https://portfolio-luyujin9.vercel.app/",
-  },
-  {
     name: "Online Shop",
     description:
       "Dies ist mein erstes TypeScript-Projekt, alle Funktionen werden schrittweise weiterentwickelt, und ich werde kontinuierlich aktualisieren",
@@ -37,6 +28,16 @@ export const projectsData = [
     keyWord: ["TypeScrpit"],
     code: " https://online-shop-liard.vercel.app/",
     preview: "",
+  },
+  {
+    name: "Portfolio",
+    description:
+      "Die Portfolio Webseite zeigt meine Informationen, um mich besser kennenlernen zu können.",
+    photo: "/images/portfolio.png",
+    techStack: "Javascript, React, CSS",
+    keyWord: ["Javascript", "React"],
+    code: "https://github.com/LuYujin9/Portfolio",
+    preview: "https://portfolio-luyujin9.vercel.app/",
   },
   {
     name: "Feedback Page",
