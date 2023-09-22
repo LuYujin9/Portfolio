@@ -12,16 +12,6 @@ function Resume() {
     <main>
       <div className={`${isStart ? "slide-up" : "slide-up-active"}`}>
         <h3>LEBENSLAUF</h3>
-        <img
-          className="resume-photo"
-          src="/images/Lebenslauf-page-one.png"
-          alt="CV from Yujin"
-        />
-        <img
-          className="resume-photo"
-          src="/images/Lebenslauf-page-two.png"
-          alt="CV from Yujin"
-        />
       </div>
     </main>
   );
