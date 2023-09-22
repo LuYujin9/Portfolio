@@ -1,4 +1,4 @@
-import "../components/style/About.css";
+import "../styles/About.css";
 import { useEffect } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 

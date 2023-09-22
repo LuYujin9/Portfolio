@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../components/style/Homepage.css";
+import "../styles/Homepage.css";
 
 function Home() {
   const [isStart, setIsStart] = useState(false);
