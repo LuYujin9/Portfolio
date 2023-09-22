@@ -1,4 +1,4 @@
-import "../components/style/Contact.css";
+import "../styles/Contact.css";
 import { useState, useEffect } from "react";
 import { BsTelephone, BsMailbox } from "react-icons/bs";
 import { AiOutlineMail, AiOutlineMessage } from "react-icons/ai";

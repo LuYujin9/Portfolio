@@ -2,7 +2,7 @@
   padding: 4em 0;
   height: calc(100vh - 8em);
   width: 100%;
-  background-image: url("../../../public/images/background.jpg");
+  background-image: url("../../public/images/background.jpg");
   background-size: cover;
   opacity: 0.9;
 }

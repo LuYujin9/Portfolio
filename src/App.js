@@ -1,10 +1,10 @@
 import { Route, Routes, NavLink } from "react-router-dom";
-import "./components/style/App.css";
-import Home from "./Pages/Homepage";
-import About from "./Pages/About";
-import Projects from "./Pages/Projects";
-import Resume from "./Pages/Resume";
-import Contact from "./Pages/Contact";
+import "./styles/App.css";
+import Home from "./pages/Homepage";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 import GithubIcon from "./github.svg";
 import LinkedinIcon from "./linkedin.svg";
 

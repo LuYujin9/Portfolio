@@ -1,4 +1,4 @@
-import "../components/style/Projects.css";
+import "../styles/Projects.css";
 import { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Filter from "../components/Filter";

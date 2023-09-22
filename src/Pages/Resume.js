@@ -1,4 +1,4 @@
-import "../components/style/Resume.css";
+import "../styles/Resume.css";
 import { useState, useEffect } from "react";
 
 function Resume() {
